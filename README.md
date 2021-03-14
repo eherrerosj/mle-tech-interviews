@@ -1,4 +1,4 @@
-# Software Engineering challenges
+# Machine Learning Engineering technical interview preparation
 It's really cool and useful to brush up some SW concepts that you have either never seen or don't get the chance to use with enough frequency
 
 If you are a Software / Data / ML Engineer that want to gain some knowledge on software and system fundamental through practice, keep reading.
