@@ -44,19 +44,13 @@ class Solution:
         return True
 
 
-sol = Solution().isAlienSorted(
-    words=["hello", "leetcode"], order="hlabcdefgijkmnopqrstuvwxyz"
-)
+sol = Solution().isAlienSorted(words=["hello", "leetcode"], order="hlabcdefgijkmnopqrstuvwxyz")
 print(sol == True)
 
-sol = Solution().isAlienSorted(
-    words=["word", "world", "row"], order="worldabcefghijkmnpqstuvxyz"
-)
+sol = Solution().isAlienSorted(words=["word", "world", "row"], order="worldabcefghijkmnpqstuvxyz")
 print(sol == False)
 
-sol = Solution().isAlienSorted(
-    words=["apple", "app"], order="abcdefghijklmnopqrstuvwxyz"
-)
+sol = Solution().isAlienSorted(words=["apple", "app"], order="abcdefghijklmnopqrstuvwxyz")
 print(sol == False)
 
 sol = Solution().isAlienSorted(

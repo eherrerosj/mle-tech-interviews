@@ -70,9 +70,7 @@ class Solution:
         return result
 
 
-sol = Solution().islandPerimeter(
-    grid=[[0, 1, 0, 0], [1, 1, 1, 0], [0, 1, 0, 0], [1, 1, 0, 0]]
-)
+sol = Solution().islandPerimeter(grid=[[0, 1, 0, 0], [1, 1, 1, 0], [0, 1, 0, 0], [1, 1, 0, 0]])
 print(sol == 16)
 
 sol = Solution().islandPerimeter(grid=[[0, 1]])

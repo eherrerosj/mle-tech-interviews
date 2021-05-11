@@ -54,9 +54,7 @@ class Solution:
                 digit_logs.append(log)
 
         # sort letter logs (careful with identical content ones)
-        letter_logs = sorted(
-            letter_logs, key=lambda l: (l.split(" ", 1)[1], l.split(" ", 1)[0])
-        )
+        letter_logs = sorted(letter_logs, key=lambda l: (l.split(" ", 1)[1], l.split(" ", 1)[0]))
         print(f"letter logs: {letter_logs}, letter digit_logs: {digit_logs}")
         print(f"sol: {letter_logs + digit_logs}")
         return letter_logs + digit_logs
@@ -75,17 +73,10 @@ sol = Solution().reorderLogFiles(
         "let3 art zero",
     ]
 )
-print(
-    sol
-    == ["let1 art can", "let3 art zero", "let2 own kit dig", "dig1 8 1 5 1", "dig2 3 6"]
-)
+print(sol == ["let1 art can", "let3 art zero", "let2 own kit dig", "dig1 8 1 5 1", "dig2 3 6"])
 
-sol = Solution().reorderLogFiles(
-    logs=["a1 9 2 3 1", "g1 act car", "zo4 4 7", "ab1 off key dog", "a8 act zoo"]
-)
+sol = Solution().reorderLogFiles(logs=["a1 9 2 3 1", "g1 act car", "zo4 4 7", "ab1 off key dog", "a8 act zoo"])
 print(sol == ["g1 act car", "a8 act zoo", "ab1 off key dog", "a1 9 2 3 1", "zo4 4 7"])
 
-sol = Solution().reorderLogFiles(
-    logs=["a1 9 2 3 1", "g2 act car", "zo4 4 7", "ab1 off key dog", "g1 act car"]
-)
+sol = Solution().reorderLogFiles(logs=["a1 9 2 3 1", "g2 act car", "zo4 4 7", "ab1 off key dog", "g1 act car"])
 print(sol == ["g1 act car", "g2 act car", "ab1 off key dog", "a1 9 2 3 1", "zo4 4 7"])
