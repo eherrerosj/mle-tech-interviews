@@ -17,7 +17,7 @@ Constraints:
 
 Learnings:
 - Almost got it right the xor with and trick with shifting,
-    I just missed the recursive trick. Great learning!
+    I just missed the recursive trick with xor + b as carry. Great learning!
 - Set union A | B
 - Set intersection A & B
 - Set subtraction A & ~B
@@ -43,4 +43,7 @@ class Solution:
 
 
 sol = Solution().getSum(a=2, b=3)
+print(sol == 5)
+
+sol = Solution().getSum(a=3, b=2)
 print(sol == 5)

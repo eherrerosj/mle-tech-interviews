@@ -1,15 +1,14 @@
 """
-Given a string s of '(' , ')' and lowercase English characters. 
+Given a string s of '(' , ')' and lowercase English characters.
 
-Your task is to remove the minimum number of parentheses ( '(' or ')', in any positions ) so that the resulting parentheses string is valid and return any valid string.
+Your task is to remove the minimum number of parentheses ( '(' or ')', in any positions )
+    so that the resulting parentheses string is valid and return any valid string.
 
 Formally, a parentheses string is valid if and only if:
 
     It is the empty string, contains only lowercase characters, or
     It can be written as AB (A concatenated with B), where A and B are valid strings, or
     It can be written as (A), where A is a valid string.
-
- 
 
 Example 1:
 
@@ -33,16 +32,12 @@ Example 4:
 Input: s = "(a(b(c)d)"
 Output: "a(b(c)d)"
 
- 
-
 Constraints:
-
     1 <= s.length <= 10^5
     s[i] is one of  '(' , ')' and lowercase English letters.
 
-
 Learnings:
-- In my initial solution I used 2 independent for loops to keep complexity a O(n). I uses a
+- In my initial solution I used 2 independent for loops to keep complexity at O(n). I uses a
     2 counters: one to sweep L->R and one R->L (+1 when a "(" is found, -1 when a ")" is found
     in the former, opposed signs in the later. It worked as well but code was too long because I
     didn't add the logic to an independent function and I ended up repeating code
